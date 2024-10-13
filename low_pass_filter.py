@@ -7,10 +7,6 @@ Low pass filter that removes high frequency noise from a 1D time-series data.
 import numpy as np
 import matplotlib.pyplot as plt
 
-signal = ('~/low_pass_filter/M4-info.csv')
-cutoff_freq = 2 #Hz
-sampling_rate = 44100
-
 def low_pass_filter(signal, cutoff_freq, sampling_rate):
     """
     Applies a low-pass filter using FFT (Fast Fourier Transform) to remove 
@@ -60,3 +56,16 @@ def plot_signals(original_signal, filtered_signal, sampling_rate):
     plt.title('Original vs Filtered Signal')
     plt.show()
 
+def main():
+    signal = ('~/low_pass_filter/M4-info.csv')
+    cutoff_freq = 2 #Hz
+    sampling_rate = 44100
+    """""
+    Trial dataset to check if the code works. 
+    """""
+
+    filtered_signal = low_pass_filter(signal, cutoff_freq, sampling_rate)
+    plot_signals(signal, filtered_signal, sampling_rate)
+    
+if __name__ == "__main__":
+    main()

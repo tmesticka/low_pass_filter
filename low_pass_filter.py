@@ -60,4 +60,3 @@ def plot_signals(original_signal, filtered_signal, sampling_rate):
     plt.title('Original vs Filtered Signal')
     plt.show()
 
-print ("hello there")

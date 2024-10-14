@@ -6,6 +6,7 @@ Low pass filter that removes high frequency noise from a 1D time-series data.
 
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 def low_pass_filter(signal, cutoff_freq, sampling_rate):
     """
@@ -56,14 +57,21 @@ def plot_signals(original_signal, filtered_signal, sampling_rate):
     plt.title('Original vs Filtered Signal')
     plt.show()
 
+def extract_values(csv_file):
+    csv_file = ('~/low_pass_filter/Electric_production.csv.xls')
+    signal = pd.read_csv(csv_file)
+    values = signal['IPG2211A2N'].astype(float).tolist()
+    return values
+
 def main():
-    signal = ('~/low_pass_filter/M4-info.csv')
+    csv_file = ('~/low_pass_filter/Electric_production.csv.xls')
+    signal = extract_values(csv_file)
     cutoff_freq = 2 #Hz
     sampling_rate = 44100
     """""
     Trial dataset to check if the code works. 
     """""
-
+    print (signal)
     filtered_signal = low_pass_filter(signal, cutoff_freq, sampling_rate)
     plot_signals(signal, filtered_signal, sampling_rate)
     

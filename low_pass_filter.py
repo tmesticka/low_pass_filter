@@ -62,6 +62,9 @@ def extract_values(csv_file):
     signal = pd.read_csv(csv_file)
     values = signal['IPG2211A2N'].astype(float).tolist()
     return values
+    """""
+    Function that turns a csv file into an array. 
+    """""
 
 def main():
     csv_file = ('~/low_pass_filter/Electric_production.csv.xls')

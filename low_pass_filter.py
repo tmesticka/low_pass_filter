@@ -15,6 +15,7 @@ def low_pass_filter(signal, cutoff_freq, sampling_rate):
 
     Parameters:
     - signal: 1D numpy array representing the time series data
+                or a csv file for which a user has to use a read csv file function bellow
     - cutoff_freq: cutoff frequency in Hz for the low-pass filter
     - sampling_rate: sampling rate of the signal in Hz
 
@@ -69,7 +70,7 @@ def extract_values(csv_file):
 def main():
     csv_file = ('~/low_pass_filter/Electric_production.csv.xls')
     signal = extract_values(csv_file)
-    cutoff_freq = 2 #Hz
+    cutoff_freq = 900 #Hz
     sampling_rate = 44100
     """""
     Trial dataset to check if the code works. 

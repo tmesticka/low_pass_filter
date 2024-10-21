@@ -102,6 +102,10 @@ def test_visualization():
     plt.legend()
     plt.title('Original vs Filteres Signal with a cutoff frequency of {cutoff_freq} Hz')
     plt.show()
-    
-    pytest.test_visualozation()
-    
+test_visualization()
+
+def test_empty_array():
+    signal = []
+    result = empty_array(signal)
+    assert result == None
+test_empty_array

@@ -89,6 +89,21 @@ Now to create a few test functions:
 """
 import pytest
 
+empty_array = []
+def test_empty_array():
+    signal = []
+    result = empty_array(signal)
+    assert result == None
+test_empty_array()
+
+
+def test_a_pytest_fail():
+    signal = []
+    result = empty_array(signal)
+    assert result == 1
+test_a_pytest_fail()
+    
+
 def test_visualization(): 
     t = np.linspace(0, 1, 1000, endpoint = False)
     original_signal  = np.sin(2*np.pi*50*t) + np.sin(2*np.pi*200*t)
@@ -104,8 +119,3 @@ def test_visualization():
     plt.show()
 test_visualization()
 
-def test_empty_array():
-    signal = []
-    result = empty_array(signal)
-    assert result == None
-test_empty_array

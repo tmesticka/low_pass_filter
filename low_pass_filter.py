@@ -94,14 +94,14 @@ def test_empty_array():
     signal = []
     result = empty_array(signal)
     assert result == None
-test_empty_array()
+#test_empty_array()
 
 
 def test_a_pytest_fail():
     signal = []
     result = empty_array(signal)
     assert result == 1
-test_a_pytest_fail()
+#test_a_pytest_fail()
     
 
 def test_visualization(): 
@@ -117,5 +117,12 @@ def test_visualization():
     plt.legend()
     plt.title('Original vs Filteres Signal with a cutoff frequency of {cutoff_freq} Hz')
     plt.show()
-test_visualization()
+#test_visualization()
 
+pytest low_pass_filter.py
+
+
+#screenshot of pytest in readme
+#tests can be failing as well, just make sure the pytest works
+#pytest verbose
+#add pyproject.toml with my name, contact

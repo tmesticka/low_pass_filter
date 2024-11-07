@@ -87,4 +87,3 @@ if __name__ == "__main__":
 #screenshot of pytest in readme
 #tests can be failing as well, just make sure the pytest works
 #pytest verbose
-#add pyproject.toml with my name, contact

@@ -9,7 +9,6 @@ def test_empty_array():
     signal = []
     result = empty_array(signal)
     assert result == None
-#test_empty_array()
 
 
 def test_a_pytest_fail():
@@ -32,4 +31,4 @@ def test_visualization():
     plt.title('Original vs Filteres Signal with a cutoff frequency of {cutoff_freq} Hz')
     plt.show()
 
-pytest
+pytest -vv

@@ -4,3 +4,4 @@ author = [{name = "Tatiana Mestická", email = "tanicka.mesticka@gmail.com"}]
 readme = "README.md"
 keywords = ["filter", "frequency", "pytest", "visualization"]
 libraries = ["pandas", "numpy", "matplotlib", "pytest"]
+addopts = "-v"

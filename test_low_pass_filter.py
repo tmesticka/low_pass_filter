@@ -31,3 +31,5 @@ def test_visualization():
     plt.legend()
     plt.title('Original vs Filteres Signal with a cutoff frequency of {cutoff_freq} Hz')
     plt.show()
+
+pytest

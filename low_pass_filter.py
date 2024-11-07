@@ -83,9 +83,6 @@ if __name__ == "__main__":
     main()
 
 
-#pytest test_low_pass_filter.py
-
-
 
 #screenshot of pytest in readme
 #tests can be failing as well, just make sure the pytest works

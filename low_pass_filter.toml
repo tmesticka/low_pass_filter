@@ -1,0 +1,6 @@
+name = "low_pass_filter"
+description = "A Python package that filters out high frequencies from inputed dataset."
+author = [{name = "Tatiana Mestická", email = "tanicka.mesticka@gmail.com"}]
+readme = "README.md"
+keywords = ["filter", "frequency", "pytest", "visualization"]
+libraries = ["pandas", "numpy", "matplotlib", "pytest"]

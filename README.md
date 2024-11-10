@@ -19,13 +19,13 @@ The Low-pass filter package is designed to assist its users in removing high-fre
     These can be installed easily using pip install (given library). 
 
 ## How It Works: 
-    - Input Data:
+    Input Data:
         The package processes 1D time-series datasets. Users can either provide raw numerical arrays or load data from CSV files.
-    - Filtering Process:
+    Filtering Process:
         The data undergoes FFT to convert it to the frequency domain.
         A low-pass filter is applied, removing frequencies above the chosen cutoff value.
         The Inverse FFT is then used to transform the filtered data back into the time domain.
-    - Output:
+    Output:
         The smoothed, noise-reduced signal is returned, ready for analysis or further processing.
         Additionally, a plot comparing the original and filtered signals is generated for easy visual assessment.
     
@@ -33,10 +33,10 @@ The Low-pass filter package is designed to assist its users in removing high-fre
     Suppose working with scientific time-series data which contains non-neglectable high-frequency noise. Applying this package will simplify the process of cleaning the dataset, improving its quality and most importantly making it easier to interpret. 
 
 ### Why Use This Package: 
-    - User-Friendly: 
+    User-Friendly: 
         Ideal for users with minimal knowledge of signal processing. The package abstracts the complex math involved in filtering, providing an intuitive interface.
-    - Time-Saving: 
+    Time-Saving: 
         Automates the transformation, filtering, and visualization steps, making data cleaning efficient and straightforward.
-    - Versatile: 
+    Versatile: 
         Suitable for any type of time-series data, from financial and environmental datasets to scientific measurements.
     Whether you need to smooth data for clearer trends or prepare signals for further analysis, this package streamlines the noise removal process, improving your workflow and data quality.

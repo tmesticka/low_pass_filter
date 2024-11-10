@@ -7,6 +7,7 @@ Low pass filter that removes high frequency noise from a 1D time-series data.
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import pytest
 
 def low_pass_filter(signal, cutoff_freq, sampling_rate):
     """
@@ -82,8 +83,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-
+pytest test_low_pass_filter.py
 
 #screenshot of pytest in readme
-#tests can be failing as well, just make sure the pytest works
 #pytest verbose

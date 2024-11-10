@@ -28,6 +28,9 @@ The Low-pass filter package is designed to assist its users in removing high-fre
     Output:
         The smoothed, noise-reduced signal is returned, ready for analysis or further processing.
         Additionally, a plot comparing the original and filtered signals is generated for easy visual assessment.
+
+## Testing
+    A file with test functions is also a part of this project. It helps develop the package and check its functionality. A screenshot of tests is provided here: /Users/macuser/Desktop/Screenshot 2024-11-10 at 23.44.30.png
     
 ### Example use case: 
     Suppose working with scientific time-series data which contains non-neglectable high-frequency noise. Applying this package will simplify the process of cleaning the dataset, improving its quality and most importantly making it easier to interpret. 

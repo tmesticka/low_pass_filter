@@ -82,8 +82,3 @@ def main():
     
 if __name__ == "__main__":
     main()
-
-pytest test_low_pass_filter.py
-
-#screenshot of pytest in readme
-#pytest verbose
